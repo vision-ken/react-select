@@ -1,3 +1,5 @@
+[中文版本](https://github.com/vision-ken/xmlab-tag-select/tree/develop/CONTRIBUTING-CN.md)
+
 # Contributing
 
 Thanks for your interest in React-Select. All forms of contribution are
