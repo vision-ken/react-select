@@ -11,6 +11,7 @@ const Value = React.createClass({
 		id: React.PropTypes.string,                   // Unique id for the value - used for aria
 		onClick: React.PropTypes.func,                // method to handle click on value label
 		onRemove: React.PropTypes.func,               // method to handle removal of the value
+    removeIconInFront: React.PropTypes.bool,      // removeIconInFront prop passed to ReactSelect
 		value: React.PropTypes.object.isRequired,     // the option object for this value
 	},
 
@@ -81,15 +82,29 @@ const Value = React.createClass({
 	},
 
 	render () {
-		return (
-			<div className={classNames('Select-value', this.props.value.className)}
-				style={this.props.value.style}
-				title={this.props.value.title}
+	    console.log('removeIconInFront=' + this.props.removeIconInFront);
+		if (this.props.removeIconInFront) {
+			return (
+				<div className={classNames('Select-value', this.props.value.className)}
+					 style={this.props.value.style}
+					 title={this.props.value.title}
 				>
-				{this.renderRemoveIcon()}
-				{this.renderLabel()}
-			</div>
-		);
+					{this.renderRemoveIcon()}
+					{this.renderLabel()}
+				</div>
+			);
+		} else {
+			return (
+				<div className={classNames('Select-value', this.props.value.className)}
+					 style={this.props.value.style}
+					 title={this.props.value.title}
+				>
+					{this.renderLabel()}
+					{this.renderRemoveIcon()}
+				</div>
+			);
+		}
+
 	}
 
 });

@@ -1,5 +1,5 @@
 module.exports = [
-	{ github: 'jedwatson', name: 'Jed Watson' },
+	{ github: 'jedwatson', name: '研发实验室' },
 	{ github: 'bruderstein', name: 'Dave Brotherstone' },
 	{ github: 'jossmac', name: 'Joss Mackison' },
 	{ github: 'jniechcial', name: 'Jakub Niechciał' },
