@@ -40,3 +40,9 @@ Then open [`localhost:8000`](http://localhost:8000) in a browser.
 ```javascript
 npm run build
 ```
+
+## 发布到私有仓库
+```javascript
+npm publish --registry http://10.100.82.212:20001/repository/xlab-npm-private/
+```
+
