@@ -2,7 +2,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Select from 'xmlab-react-select';
+// import Select from '../../src/index';
+import './example.less';
 
 import Creatable from './components/Creatable';
 import Contributors from './components/Contributors';
@@ -21,7 +22,7 @@ ReactDOM.render(
 		<Multiselect label="Multiselect" />
 		<Virtualized label="Virtualized" />
 		<Contributors label="Contributors (Async)" />
-		<GithubUsers label="Github users 222(Async with fetch.js)" />
+		<GithubUsers label="GitHub users (Async with fetch.js)" />
 		<NumericSelect label="Numeric Values" />
 		<BooleanSelect label="Boolean Values" />
 		<CustomRender label="Custom Render Methods"/>

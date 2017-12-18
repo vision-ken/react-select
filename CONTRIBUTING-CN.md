@@ -2,7 +2,7 @@
 
 感谢你对React-Select的兴趣，我们欢迎任何形式的贡献，如issue报告、PR和文档。
 
-* 我们使用node.js v4版本来开发和测试。因为和JSDOM以及更老的node.js版本不兼容，你需要使用node 4来运行测试用例。
+* 我们使用node.js v4+版本来开发和测试。因为和JSDOM以及更老的node.js版本不兼容，你需要使用node 4+来运行测试用例。
 
 * 如果你要升级你的node.js 0.x，为了保证在新node.js版本下正确的依赖，有时候你需要删除工程下的node_modules目录，然后重新运行npm install（至少你需要删除jsdom模块并重新安装）。
 
